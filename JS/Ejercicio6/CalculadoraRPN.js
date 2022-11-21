@@ -1,7 +1,7 @@
 "use strict"
 class CalculadoraRPN {
 	constructor() {
-		this.pila = new Array();
+		this.pila = new Stack();
 		this.consola = "";
 		document.addEventListener('keydown', function(event) {
             switch (event.key){
@@ -85,27 +85,27 @@ class CalculadoraRPN {
 	
 	//OPERACIONES
 	botonSum(){
-		var suma = parseFloat(this.pop());
-		suma += parseFloat(this.pop());
-		this.push(suma);
+		var suma = parseFloat(this.pila.pop());
+		suma += parseFloat(this.pila.pop());
+		this.pila.push(suma);
 		this.mostrarPila();
 	}
 	botonSub(){
-		var sustraendo = parseFloat(this.pop());
-		var res = parseFloat(this.pop()) - sustraendo;
-		this.push(res);
+		var sustraendo = parseFloat(this.pila.pop());
+		var res = parseFloat(this.pila.pop()) - sustraendo;
+		this.pila.push(res);
 		this.mostrarPila();
 	}
 	botonMul(){
-		var mul = parseFloat(this.pop());
-		mul *= parseFloat(this.pop());
-		this.push(mul);
+		var mul = parseFloat(this.pila.pop());
+		mul *= parseFloat(this.pila.pop());
+		this.pila.push(mul);
 		this.mostrarPila();
 	}
 	botonDiv(){
-		var divisor = parseFloat(this.pop());
-		var div = parseFloat(this.pop()) / divisor;
-		this.push(div);
+		var divisor = parseFloat(this.pila.pop());
+		var div = parseFloat(this.pila.pop()) / divisor;
+		this.pila.push(div);
 		this.mostrarPila();
 	}
 	botonTrigonometrica(func){
@@ -122,24 +122,24 @@ class CalculadoraRPN {
 			digito = Math.acos(digito)
 		else 
 			digito = Math.atan(digito)
-		this.push(digito);
+		this.pila.push(digito);
 		this.mostrarPila();
 	}
 	botonLog(){
 		var digito = this.pop();
 		digito = Math.log(digito);
-		this.push(digito);
+		this.pila.push(digito);
 		this.mostrarPila();	
 	}
 	
 	botonApilarDato(){
-		this.push(this.consola);
+		this.pila.push(this.consola);
 		this.mostrarPila();
 		this.consola = "";
 		document.getElementById('consola').value = this.consola;
 	}
 	botonDesapilarDato(){
-		this.pop();
+		this.pila.pop();
 		this.mostrarPila();
 	}
 	resetear(){
@@ -157,12 +157,7 @@ class CalculadoraRPN {
 	}
 	
 	//PILA
-	push(valor){
-		this.pila.push(valor);
-	}
-	pop(){
-		return (this.pila.pop());
-	}
+
 	mostrarPila(){
 		var res = " ";
 		for(var i in this.pila)
@@ -171,8 +166,8 @@ class CalculadoraRPN {
 	}
 	vaciarPila(){
 		for(var i in this.pila)
-			this.pop();
-		this.pop();
+			this.pila.pop();
+		this.pila.pop();
 	}
 }
 var calculadora = new CalculadoraRPN();

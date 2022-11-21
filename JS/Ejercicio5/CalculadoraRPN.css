@@ -1,51 +1,34 @@
 main{
     display:block;
-    margin:0 auto;
     padding:20px;
-    background-color:grey;
-    width:275px;
-    height:500px;
+    background-color:black;
+    width:265px;
+      font: 400 13px Tahoma, sans-serif;
+    height:450px;
     border-radius: 25px;
-  
-        
-    }
-    
-  input[type=text]{
-      width: 70%;
-      height:0.5%;
+  }
+  input[type=text] {
+      width: 73%;
       padding: 16px 32px;
-      margin:8px 0;
-      text-align: right;
-      color: #000000;
-      background: #bfcde6;
-      font-size: 20px;
+      font-size: 16px;
+      margin: 8px 0;
+      border: 1px solid silver;
+      border-radius: 1px;
+      text-align: left;
+      color: #333;
+      background: #ccc;
   }
-    
-  input[type=button]{
-      height:45px;
-      width:50px;
-      background-color:#000000;
+  input[type=button], input[type=submit], input[type=reset] {
+      background-color: #00B0F0;
+      border: none;
       color: white;
-      padding: 5px;
-      cursor: pointer;
-      font-size:14px;
-      min-width: 16px;
+      padding: 8px 12px;
+      font-size: 16px;
+      min-width: 22%;
       text-decoration: none;
-      
+      margin: 4px 2px;
+      cursor: pointer;
   }
-  
-  input[type=button]:hover{
-      background-color: #000000;
-      color: white;
-      font-size: 15px;
-      
+  input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #333;
   }
-  
-  input[type=button].uno{
-      min-width: 16%;
-  }
-  
-  input[type=button].dos{
-      min-width: 38%;
-  }
-     
