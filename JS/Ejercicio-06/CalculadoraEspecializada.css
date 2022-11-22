@@ -3,8 +3,8 @@ main{
     margin:0 auto;
     padding:20px;
     background-color:grey;
-    width:275px;
-    height:500px;
+    width:220px;
+    height:450px;
     border-radius: 25px;
   
         
@@ -49,21 +49,6 @@ main{
       min-width: 38%;
   }
 
-  /*002*/
-body > form {
-    margin: 0.125em;
-    padding: 1em;
-    background-color: rgb(48, 48, 48);
-    color: black;
-    border-radius: 0.625em;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    row-gap: 0.5em;
-    column-gap: 0.5em;
-    height: 40em;
-    max-width: 28em;
-    min-width: 15em;
-}
 
 label,
 textarea {
