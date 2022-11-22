@@ -3,6 +3,7 @@ class CalculadoraBasica {
 	constructor () {
 		this.consola="";
 		this.memoria="0";
+		
 	}
 	  
     numeros(num) {
@@ -12,16 +13,21 @@ class CalculadoraBasica {
 	}
 	
 	mSuma(){
-		this.memoria+="+" + document.getElementById('consola').value;
+		this.memoria+="+" + document.querySelector('input[name="consola"]').value;
 		this.resetear();
 	}
 	botonMemResta(){
-		this.memoria+="-" + document.getElementById('consola').value;
+		this.memoria+="-" + document.querySelector('input[name="consola"]').value;
 		this.resetear();
 	}
 	mMostrar(){
-		document.getElementById('consola').value = eval(this.memoria);
+		document.querySelector('input[name="consola"]').value = eval(this.memoria);
 		this.memoria="";
+	}
+
+	resetear(){
+		this.consola = "";
+		document.querySelector('input[name="consola"]').value = this.consola;
 	}
 	
 	botonDec(){
@@ -48,8 +54,7 @@ class CalculadoraBasica {
 
 	
 	pintar(){
-		var p = document.getElementById("consola");
-        p.value = this.consola;
+		document.querySelector('input[name="consola"]').value = this.consola;
         //document.getElementById("consola").value = this.consola;
     }
 	
@@ -86,11 +91,11 @@ class CalculadoraBasica {
 	
 	calcular(){
 		try { 
-			document.getElementById("consola").value = eval(this.consola);
+			document.querySelector('input[name="consola"]').value = eval(this.consola);
 			this.consola = document.getElementById("consola").value;
         }
         catch(err) {
-            document.getElementById("consola").value = "Syntax Error";
+            document.querySelector('input[name="consola"]').value = "Syntax Error";
 			this.consola="";
         }  
 	}
@@ -100,6 +105,159 @@ class CalculadoraBasica {
 		
 		constructor() {
 			super();
+			document.addEventListener('keydown', function (event) {
+				switch (event.key) {
+					case "1": {
+						this.numeros(1);
+						break;
+					}
+					case "2": {
+						this.numeros(2);
+						break;
+					}
+					case "3": {
+						this.numeros(3);
+						break;
+					}
+					case "4": {
+						this.numeros(4);
+						break;
+					}
+					case "5": {
+						this.numeros(5);
+						break;
+					}
+					case "6": {
+						this.numeros(6);
+						break;
+					}
+					case "7": {
+						this.numeros(7);
+						break;
+					}
+					case "8": {
+						this.numeros(8);
+						break;
+					}
+					case "9": {
+						this.numeros(9);
+						break;
+					}
+					case "0": {
+						this.numeros(0);
+						break;
+					}
+					case "+": {
+						this.botonSuma();
+						break;
+					}
+					case "-": {
+						this.botonResta();
+						break;
+					}
+					case "/": {
+						this.botonDivision();
+						break;
+					}
+					case "*": {
+						this.botonMultiplicar();
+						break;
+					}
+					case "o": {
+						this.borrarTodo();
+						break;
+					}
+					case "C": {
+						this.borrarTodo();
+						break;
+					}
+					case "r": {
+						this.calculoMath('raiz');
+						break;
+					}
+					case "%": {
+						this.agregarDisplay('%');
+						break;
+					}
+					case ".": {
+						this.botonDec();
+						break;
+					}
+					case "m": {
+						this.mMostrar();
+						break;
+					}
+					case "M": {
+						this.mMas();
+						break;
+					}
+					case "n": {
+						this.nResta();
+						break;
+					}
+					case "^": {
+						this.calculoMath('2');
+						break;
+					}
+					case "y": {
+						this.calculoMath('y');
+						break;
+					}
+					case "s": {
+						this.calculoMath('sin');
+						break;
+					}
+					case "c": {
+						this.calculoMath('cos');
+						break;
+					}
+					case "t": {
+						this.this.calculoMath('tan');
+						break;
+					}
+					case "x": {
+						this.calculoMath('x');
+						break;
+					}
+					case ")": {
+						this.agregarDisplay(')');
+						break;
+					}
+					case "(": {
+						this.agregarDisplay('(');
+						break;
+					}
+					case "t": {
+						this.this.calculoMath('tan');
+						break;
+					}
+
+					case "<": {
+						this.limpiarDisplay();
+						break;
+					}
+					case "!": {
+						this.factorial();
+						break;
+					}
+					case "e": {
+						this.calculoMath('e');
+						break;
+					}
+					case "t": {
+						this.this.calculoMath('tan');
+						break;
+					}
+					case "?": {
+						this.cambioSigno();
+						break;
+					}
+					case "=": {
+						this.calcular();
+						break;
+					}
+				}
+			}.bind(this));
 		}
 	
 		limpiarDisplayParte() {

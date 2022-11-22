@@ -14,9 +14,8 @@
 		<h1>Calculadora científica</h1>
 		<main>
 			<p>	
-				<label>
-					.<textarea class ="textarea" id="consola"  disabled=""></textarea>
-			   </label>
+				<label for = "resultado"> Pantalla </label>
+				<input type="text" name ="consola" id="consola" value=" " disabled />
 			</p>	
 			<p>	
 				<input type="button" class="memory" id="mrc" 	value="mrc" onclick="calculadora.mMostrar()"/>
@@ -26,9 +25,9 @@
 			<p>	
 				<input type="button" class="operation" id="cuadrado"  value="x&#178;" onclick="calculadora.calculoMath('2')"/>
 				<input type="button" class="operation" id="y"  value="x^y" onclick="calculadora.calculoMath('y')"/>
-				<input type="button" id="sin" 	value="SIN" onclick="calculadora.botonSin()"/>
-				<input type="button" id="cos" 	value="COS" onclick="calculadora.botonCos()"/>
-				<input type="button" id="tan" 	value="TAN" onclick="calculadora.botonTan()"/>
+				<input type="button" id="sin" 	value="SIN" onclick="calculadora.calculoMath('sin')"/>
+				<input type="button" id="cos" 	value="COS" onclick="calculadora.calculoMath('cos')"/>
+				<input type="button" id="tan" 	value="TAN" onclick="calculadora.calculoMath('tan')"/>
 			</p>	
 			<p>	
 				<input type="button" id="sqrt" class="operation" value="&#8730;" onclick="calculadora.calculoMath('raiz')"/>

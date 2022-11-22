@@ -14,9 +14,9 @@
 		<h1>Calculadora básica</h1>
 		<main>
 
-			<label>
-				.<textarea id="consola" disabled=""></textarea>
-			</label>
+			<label for = "resultado"> Pantalla </label>
+			<input type="text" name ="consola" id="consola" value=" " disabled/>
+			
 			<p>
 				<input type="button" id="c" 	value="ON/c" onclick="calculadora.borrarTodo()"/>
 				<input type="button" id="c" 	value="CE" onclick="calculadora.borrarTodo()"/>
@@ -43,7 +43,7 @@
 				<input type="button" id="dos" 	value="2" onclick="calculadora.numeros(2)"/>
 				<input type="button" id="tres" 	value="3" onclick="calculadora.numeros(3)"/>
 				<input type="button" id="sum" 	value="+" onclick="calculadora.botonSuma()"/>
-				<input type="button" id="m-" 	value="m-" onclick="calculadora.mResta()"/>
+				<input type="button" id="m-" 	value="m-" onclick="calculadora.nResta()"/>
 			</p>
 			<p>
 				<input type="button" id="cero" 	value="0" onclick="calculadora.numeros(0)"/>

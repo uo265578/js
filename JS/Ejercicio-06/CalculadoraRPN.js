@@ -61,8 +61,20 @@ class CalculadoraRPN {
 					this.botonMul();
                     break;
 				}
+				case "t": {
+					this.calculoTotal();
+                    break;
+				}
+				case "p": {
+					this.calculoPrecio();
+                    break;
+				}
 				case "Enter": {
 					this.botonApilarDato();
+                    break;
+				}
+				case "supr": {
+					this.botonDesapilarDato();
                     break;
 				}
 			}
@@ -136,7 +148,7 @@ class CalculadoraRPN {
 		this.pila.push(this.consola);
 		this.mostrarPila();
 		this.consola = "";
-		document.getElementById('consola').value = this.consola;
+		document.querySelector('input[name="consola"]').value = this.consola;
 	}
 	botonDesapilarDato(){
 		this.pila.pop();
@@ -144,16 +156,16 @@ class CalculadoraRPN {
 	}
 	resetear(){
 		this.consola = "";
-		document.getElementById('consola').value = this.consola;
+		document.querySelector('input[name="consola"]').value = this.consola;
 	}
 	resetearfull(){
 		this.vaciarPila();
 		this.consola = "";
-		document.getElementById('consola').value = this.consola;
-		document.getElementById('pila').value = this.consola;
+		document.querySelector('input[name="consola"]').value = this.consola;
+		document.querySelector('input[name="pila"]').value = this.consola;
 	}
 	mostrarConsola(){
-		document.getElementById('consola').value = this.consola;
+		document.querySelector('input[name="consola"]').value = this.consola;
 	}
 	
 	//PILA
@@ -162,7 +174,7 @@ class CalculadoraRPN {
 		var res = " ";
 		for(var i in this.pila)
 		   res += " " + this.pila[i];
-		document.getElementById('pila').value = res;
+		   document.querySelector('input[name="pila"]').value = res;
 	}
 	vaciarPila(){
 		for(var i in this.pila)
