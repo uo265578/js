@@ -14,12 +14,12 @@
 		<h1>Calculadora básica</h1>
 		<main>
 
-			<label for = "resultado"> Pantalla </label>
-			<input type="text" name ="consola" id="consola" value=" " disabled/>
-			
+			<label for = "resultado"> Pantalla 
+				<input type="text" name ="consola" id="consola" value=" " disabled/>
+			</label>
 			<p>
 				<input type="button" id="c" 	value="ON/c" onclick="calculadora.borrarTodo()"/>
-				<input type="button" id="c" 	value="CE" onclick="calculadora.borrarTodo()"/>
+				<input type="button" id="ce" 	value="CE" onclick="calculadora.borrarTodo()"/>
 				<input type="button" id="cambiosigno" class="operation" value="&#177;" onclick="calculadora.cambioSigno()"/>
 				<input type="button" id="sqrt" class="operation" value="&#8730;" onclick="calculadora.raiz()"/>
 				<input type="button" id="porcent" class="operation" value="%" onclick="calculadora.botonPorcentaje()"/>
