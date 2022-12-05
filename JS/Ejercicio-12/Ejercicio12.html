@@ -12,8 +12,10 @@
     <p>Este navegador soporta el API File </p>
 
     <p>Seleccione un archivo de texto: </p>
-
-    <input type="file" id="archivoTexto" onchange="lector.leer(this.files);">
+    <label>
+        Seleccionar<input type="file" id="archivoTexto" onchange="lector.leer(this.files);">
+    </label>
+    
 
     <p id="nombreArchivo"></p>
     <p id="tamañoArchivo"></p>
