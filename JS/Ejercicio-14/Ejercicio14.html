@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Santiago Fidalgo Salles">
+    <title>Ejercicio14</title>
+    <script src="Ejercicio14.js"></script>
+    <link rel="stylesheet" type="text/css" href="Ejercicio14.css">
+</head>
+
+<body>
+    <h1>Test de atencion</h1>
+    <label for="archivo">Seleccione el video: </label>
+    <input type="file" id="archivo" onchange="cont.cargarArchivo(this.files);">
+    <button onclick="cont.activarContador()">Activar contador</button>
+    <button onclick="cont.pantallaCompleta()">Pantalla completa</button>
+</body>
+
+</html>
