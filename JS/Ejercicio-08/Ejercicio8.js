@@ -14,7 +14,7 @@ class Tiempo{
         $("section").append(elemento);
     }
 
-    verDatos(){
+    verHTML(){
         $("ul").remove();
         $("section").empty();
         this.verDatos("h2", "Datos en JSON desde <a href='http://openweathermap.org'>OpenWeatherMap</a>"); 
