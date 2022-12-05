@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Santiago Fidalgo Salles">
+    <title>jQuery y JSON</title>
+    <link rel="stylesheet" type="text/css" href="Ejercicio10.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="Ejercicio10.js"></script>
+</head>
+
+<body>
+    <h1><a href="https://commodities-api.com/api/latest?access_key=0fu375wuchvbrq4enhg0t8c4o6y7527rbht8fzlwlght0gta75dfizeohlst&base=USD&symbols=XAU">Precio del oro</a></h1>
+    <h2> Te damos la bienvenida al conversor de oro</h2>
+    <button onclick="convert.oroPrecio()">Visualización Precio del Oro</button>
+    <p>Convseror de oro</p>
+    <label>  
+        Importe (€) <input type="text" name ="precio" id="precio" />
+    </label> 
+    <button onclick="convert.conversorOro()">Convertir € en Oro</button>
+    
+</body>
+
+</html>

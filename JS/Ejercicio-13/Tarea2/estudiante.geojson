@@ -1,0 +1,33 @@
+{
+    "type": "FeatureCollection",
+    "name": "estudiante",
+    "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+    "features": [
+    { "type": "Feature", "properties": { "Name": "Juan Cuesta", "description": "Lugar de nacimiento:Ribadesella", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.056486546343498, 43.46321395964228 ] } },
+    { "type": "Feature", "properties": { "Name": "Juan Cuesta", "description": "Lugar de residencia:Ribadesella", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.056486546343498, 43.46321395964228 ] } },
+    { "type": "Feature", "properties": { "Name": "Emilio Delgado", "description": "Lugar de nacimiento:Arriondas", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.184301148160496, 43.38093868770556 ] } },
+    { "type": "Feature", "properties": { "Name": "Emilio Delgado", "description": "Lugar de residencia:Llanes", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -4.749607444078907, 43.410060612621095 ] } },
+    { "type": "Feature", "properties": { "Name": "Roberto Alonso", "description": "Lugar de nacimiento:Oviedo", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.839103308444676, 43.356558980153345 ] } },
+    { "type": "Feature", "properties": { "Name": "Roberto Alonso", "description": "Lugar de residencia:Oviedo", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.839103308444676, 43.356558980153345 ] } },
+    { "type": "Feature", "properties": { "Name": "Mariano Delgado", "description": "Lugar de nacimiento:Arriondas", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.184301148160496, 43.38093868770556 ] } },
+    { "type": "Feature", "properties": { "Name": "Mariano Delgado", "description": "Lugar de residencia:Llanes", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -4.749607444078907, 43.410060612621095 ] } },
+    { "type": "Feature", "properties": { "Name": "Paco Ortega", "description": "Lugar de nacimiento:Gijon", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.659528822102597, 43.53266763365407 ] } },
+    { "type": "Feature", "properties": { "Name": "Paco Ortega", "description": "Lugar de residencia:Luanco", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.661763111002195, 43.53914484702363 ] } },
+    { "type": "Feature", "properties": { "Name": "Marisa Benito", "description": "Lugar de nacimiento:Vigo", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -8.727514525588557, 42.23429553952388 ] } },
+    { "type": "Feature", "properties": { "Name": "Marisa Benito", "description": "Lugar de residencia:Vigo", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -8.727514525588557, 42.23429553952388 ] } },
+    { "type": "Feature", "properties": { "Name": "Concha Penella", "description": "Lugar de nacimiento:Ourense", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -7.869819610622399, 42.33589427047176 ] } },
+    { "type": "Feature", "properties": { "Name": "Concha Penella", "description": "Lugar de residencia:Ourense", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -7.869819610622399, 42.33589427047176 ] } },
+    { "type": "Feature", "properties": { "Name": "Vicenta Benito", "description": "Lugar de nacimiento:Pontevedra", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -8.663916510187162, 42.42759661259383 ] } },
+    { "type": "Feature", "properties": { "Name": "Vicenta Benito", "description": "Lugar de residencia:Pontevedra", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -8.623284372994613, 42.43430606228051 ] } },
+    { "type": "Feature", "properties": { "Name": "Paloma Hurtado", "description": "Lugar de nacimiento:Salamanca", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.664488766771246,40.960976368818635  ] } },
+    { "type": "Feature", "properties": { "Name": "Paloma Hurtado", "description": "Lugar de residencia:Valladolid", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -4.76146222698356,41.665168773068224  ] } },
+    { "type": "Feature", "properties": { "Name": "Belen Lopez", "description": "Lugar de nacimiento:León", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.596518345531973, 42.63932179627062 ] } },
+    { "type": "Feature", "properties": { "Name": "Belen Lopez", "description": "Lugar de residencia:León", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.596518345531973, 42.63932179627062 ] } },
+    { "type": "Feature", "properties": { "Name": "Bea Villarejo", "description": "Lugar de nacimiento:Valencia de Don Juán", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.510759091064592, 42.29668455589107 ] } },
+    { "type": "Feature", "properties": { "Name": "Bea Villarejo", "description": "Lugar de residencia:Valladolid", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.510759091064592, 42.29668455589107 ] } },
+    { "type": "Feature", "properties": { "Name": "Lucía Alvarez", "description": "Lugar de nacimiento:Astorga", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -6.045779973773644, 42.45776352351298 ] } },
+    { "type": "Feature", "properties": { "Name": "Lucía Alvarez", "description": "Lugar de residencia:Astorga", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -6.045779973773644, 42.45776352351298 ] } },
+    { "type": "Feature", "properties": { "Name": "Mauricio Hidalgo", "description": "Lugar de nacimiento:Benavente", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.720922335134926, 41.99394736080563 ] } },
+    { "type": "Feature", "properties": { "Name": "Mauricio Hidalgo", "description": "Lugar de residencia:Benavente", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -4.76146222698356, 41.665168773068224 ] } }
+    ]
+    }

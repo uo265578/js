@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Santiago Fidalgo Salles">
+    <link rel="stylesheet" type="text/css" href="MapaGeoJSON.css" />
+    <title>Ejercicio 13, tarea 2</title>
+    <script src='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css' rel='stylesheet' />
+    <script src="MapaGeoJSON.js"></script>
+</head>
+
+<body>
+    <h1>Mapa GeoJSON</h1>
+    <h2>Introduzca el archivo .GeoJSON</h2>
+    <label for="cargarFichero">Carga un archivo: </label>
+    <input id="subirFichero" type="file" onchange="ubicacion.mostrarMapa(this.files);" />
+    <main>
+        <section id="mapa">
+            <h2>Mapa</h2>
+        </section>
+    </main>
+</body>
+
+</html>
