@@ -1,52 +1,107 @@
-/*001*/
+/* 
+    Autor : Santiago Fidalgo
+    UO265578
+    Descripción de la hoja de estilo:
+*/
+
+/* Especifidad = 001 */
 body {
-    background-color: black;
-    color: lightgray;
-}
-
-/*001*/
-h1 {
+    font-family: Tahoma, sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: #000;
+    background-color: #A9A7A7;
+    line-height: 1.8;
+  }
+  
+  /* Especifidad = 001 */
+  header {
+    background-color: #F67031;
+    text-transform: uppercase;
+    padding: 6.25em 0em;
+  }
+  
+  h1 {
     text-align: center;
-}
-
-/*001*/
-button {
-    width: 15em;
-    height: 3em;
-    background: lightgray;
-    border-radius: 33px;
-    color: black;
-}
-
-/*001*/
-table {
-    margin-top: 2em;
-    margin-left: 2em;
-    border-collapse: collapse;
-}
-
-/*001*/
-th {
-    background-color: #424242;
-    color: #E3E3E3;
-}
-
-/*001*/
-td {
-    background-color: #BABABA;
-    color: #292929;
-}
-
-/*001*/
-th,
-/*001*/
-td {
-    padding:0.5em;
+  }
+  
+  /* Especifidad = 001 */
+  h2 {
+    text-decoration: underline;
+    font-family: Arial, Helvetica, serif;
+    background-color: #F67031;
+    /*
+        El background color se hereda de body 
+    */
+  }
+  
+  /* Especifidad = 001 */
+  nav {
+    font-family: Verdana, serif;
+    float: left;
+    padding-right: 6.25em;
+    padding-bottom: 0.25em;
+  }
+  
+  /* Especifidad = 001 */
+  ul {
+    border-width: 0.5em;
+    border-radius: 2.5em;
+  }
+  
+  /* Especifidad = 001 */
+  a {
+    color: #000;
+  }
+  
+  /* Especifidad = 001 */
+  footer {
+    background-color: #F67031;
+  }
+  
+  /* Especifidad = 001 */
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-decoration: underline;
+    font-family: Arial, Helvetica, serif;
+    font-style: italic;
+    background-color: #F67031;
+    ;
+  }
+  
+  /* Especifidad = 011 */
+  td:nth-child(1) {
+    font-weight: 700;
+  }
+  
+  /* Especifidad = 001 */
+  th {
+    background-color: #F67031;
+    ;
+    font-weight: 700;
+  }
+  
+  /* Especifidad = 001 */
+  img {
+    float: right;
+    padding-left: 0.625em;
+    padding-bottom: 0.3125em;
+  }
+  
+  /* Especifidad = 001 */
+  table {
+    border: 0.25em solid black;
+    align-content: center;
+  }
+  
+  /* Especifidad = 001 */
+  main {
+    padding-top: 2.5em;
+    padding-left: 0.3125em;
+  }
+  /* Especifidad = 001 */
+  td {
     text-align: center;
-}
-
-/*001*/
-a {
-    background-color: black;
-    color: #E3E3E3;
-}
+  }
