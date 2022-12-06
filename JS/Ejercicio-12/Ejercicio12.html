@@ -3,32 +3,33 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>API File: Leer un archivo de texto</title>
+    <title>Ejercicio 12</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Santiago Fidalgo Salles">
+    <link rel="stylesheet" type="text/css" href="Ejercicio12.css">
     <script src="Ejercicio12.js"></script>
-    <link rel="stylesheet" href="Ejercicio12.css" />
 </head>
+
 <body>
-    <h1>API File: Leer un archivo de texto situado en la máquina cliente</h1>
-    <p>Este navegador soporta el API File </p>
+    <h1>Carga y lectura de archivos</h1>
+    <section>
+        <label for="cargarArchivos">Carga un archivo: </label>
+        <input id="cargarArchivos" type="fichero" name="Ficheros" onchange="procesador.tamañoArchivos();" multiple>
+        <p>Archivos cargados: </p>
+        <p>Tamaño: </p>
+        <p>Archivos: </p>
 
-    <p>Seleccione un archivo de texto: </p>
-    <label>
-        Seleccionar<input type="file" id="archivoTexto" onchange="lector.leer(this.files);">
-    </label>
-    
 
-    <p id="nombreArchivo"></p>
-    <p id="tamañoArchivo"></p>
-    <p id="tipoArchivo"></p>
-    <p id="ultimaModificacion"></p>
-    <p id="contenidoArchivo"></p>
-    <pre id="areaTexto"></pre>
-    <p id="errorLectura"></p>
+        <label for="archivoTexto">Seleccione un archivo: </label>
 
-    <footer>
-        <a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png" alt="¡HTML5 válido!"
-                height="31" width="88"></a>
-    </footer>
+        <input type="file" id="archivoTexto" onchange="procesador.procesarArchivos(this.files);">
+
+        <p>Nombre del fichero: </p>
+        <p>Tamaño del fichero: </p>
+        <p>Tipo del fichero: </p>
+        <p>Contenido del fichero: </p>
+        <pre></pre>
+    </section>
 
 </body>
 
