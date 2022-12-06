@@ -16,12 +16,18 @@
     <h1>Geolocalización, mapa dinamico de Google Maps</h1>
     <main>
         <h2>Mi ubicacion</h2>
-        <label>  
-            Latitud<input type="number" name ="latitud" id="latitud" />
-        </label> 
-        <label>  
-            Longitud<input type="number" name ="longitud" id="longitud" />
-        </label> 
+        <p>
+            <label>  
+                Latitud<input type="number" name ="latitud" id="latitud" />
+            </label>
+        </p>
+        <p>
+            <label>  
+                Longitud<input type="number" name ="longitud" id="longitud" />
+            </label> 
+        </p>
+        
+        
         <input type="button" value="Obtener datos de ubicación" onClick="miUbicacion.mostrarCoordenadas();" />
         <p id="mapa"></p> 
     </main>
