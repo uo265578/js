@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="author" content="Santiago Fidalgo Salles">
     <title>Ejercicio 11, tarea 6</title>
-    <link href="GeoLocalizacion.css" rel="stylesheet" />
+    <link rel="stylesheet" href="GeoLocalizacion.css"/>
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css' rel='stylesheet' />
     <script src="GeoLocalizacion.js"></script>
@@ -17,10 +17,10 @@
     <main>
         <h2>Mi ubicacion</h2>
         <label>  
-            Latitud <input type="text" name ="latitud" id="latitud" />
+            Latitud<input type="number" name ="latitud" id="latitud" />
         </label> 
         <label>  
-            Longitud <input type="text" name ="longitud" id="longitud" />
+            Longitud<input type="number" name ="longitud" id="longitud" />
         </label> 
         <input type="button" value="Obtener datos de ubicación" onClick="miUbicacion.mostrarCoordenadas();" />
         <p id="mapa"></p> 
